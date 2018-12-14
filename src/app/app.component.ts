@@ -1,5 +1,5 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import * as jsPDF from 'jspdf';
+import { Component } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,25 +7,6 @@ import * as jsPDF from 'jspdf';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  @ViewChild('content') content: ElementRef;
-  public downloadPDF() {
-
-    let doc = new jsPDF('l', 'mm', 'a4');
-
-    let specialElementHandlers = {
-      '#editor': function(element, renderer) {
-        return true;
-      }
-    };
-
-    let content = this.content.nativeElement;
-
-    doc.fromHTML(content.innerHTML, 15, 15, {
-      'width': 190,
-      'elementHandlers': specialElementHandlers
-    });
-
-    doc.save('test.pdf');
-  }
+  title = 'app';
+ 
 }

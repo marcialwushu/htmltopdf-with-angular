@@ -1,41 +1,12 @@
-<div id="content" #content>
-  <div class="SlideBackGround" >
-
-
-    <div class="MiddlePart">
-    </div>
-
-    <div class="HeadingLarge">UNIGRANDE</div>
-
-    <div class="ParagraphMedium">HÃ„RMED INTYGAS
-    ATT NEDANSTÃ…ENDE PERSON KLARAT UTBILDNINGEN
-    SERVERINGSTILLSTÃ…ND
-    </div>
-    <div class="ParagraphSmall">Ni har visat prov pÃ¥ fÃ¶rstÃ¥else och kunnighet inom omrÃ¥det alkoholservering. De 4 delar
-    som avhandlats Ã¤r: alkoholpolitik, tillsyn, servering samt mat, lokal och utrustning. Ni har
-    efter denna utbildning de teoretiska kunskaper som krÃ¤vs fÃ¶r att servera alkoholhaltiga
-    drycker.
-    </div>
-
-    <div class="Seal"></div>
-
-    <div class="Ribbon"></div>
-
-    <hr class="DateLine" />
-
-    <hr class="ExaminerLine" />
-
-    <hr class="MiddleLine" />
-
-    <div class="DateText">Datum</div>
-
-    <div class="ExaminerText">Examiner</div>
-
-    <div class="Signature"></div>
-
-    <div class="CompletionDate">1/1/2014</div>
-    <div class="StudentName">Cleilson de Sousa Pereira</div>
-
+<mat-toolbar color="accent">
+  <span>Manav Pandya - C#Corner</span>
+  <span class="demo-toolbar"></span>
+  <button mat-button [matMenuTriggerFor]="menu">Select Conversion From Below Menu</button>
+  <mat-menu #menu="matMenu">
+      <button [routerLink]="['/toimage']" mat-menu-item>HTML To Image</button>
+      <button [routerLink]="['/topdf']" mat-menu-item>HTML To PDF</button>
+  </mat-menu>
+</mat-toolbar>
+<div>
+  <router-outlet></router-outlet>
 </div>
-
-<button (click)="downloadPDF()">Export to PDF</button>
