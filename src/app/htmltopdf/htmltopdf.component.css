@@ -43,6 +43,8 @@
       {
       height:90px;
       width:90px;
+      margin: -140px;
+      margin-bottom: 30px;
       /* padding-top: 210px; */
       /* position:fixed; */
       left:415px;
@@ -61,6 +63,7 @@
 
       width:60px;
       height:90px;
+      margin: -30px;
       /* padding-top: 210px; */
       /* position:fixed; */
       left:435px;
@@ -78,6 +81,8 @@
       {
       width:180px;
       height:90px;
+      margin-right: -400px;
+      margin-top: -90px;
       /* padding-top: 210px; */
       /* position:fixed; */
       left:582px;
@@ -94,6 +99,9 @@
       .DateLine
       {
       width:300px;
+      margin-left: 80px;
+      margin-bottom: 10px;
+
       /* position:fixed; */
       /* padding-top: 210px; */
       left:112px;
@@ -104,6 +112,8 @@
       .ExaminerLine
       {
       width:300px;
+      margin-right: 80px;
+      margin-bottom: 10px;
       /* position:fixed; */
       /* padding-top: 10px; */
       left:500px;
@@ -114,6 +124,9 @@
       .ExaminerText
       {
       width:270px;
+      margin-right: -500px;
+      /* margin: 30px; */
+      margin-top: 260px;
       /* position:fixed; */
       /* padding-top: 210px; */
       left:632px;
@@ -125,6 +138,10 @@
       .DateText
       {
       width:270px;
+      margin: 30px;
+      /* margin-left: 200px; */
+      margin-bottom: -50px;
+      margin-left: -500px;
       /* position:fixed; */
       /* padding-top: 210px; */
       left:232px;
@@ -137,6 +154,7 @@
       {
       height:200px;
       width:500px;
+      margin: -100px;
       /* padding-top: 210px; */
       /* position:fixed; */
       left:200px;
@@ -151,6 +169,8 @@
       {
       height:200px;
       width:420px;
+      margin: 90px;
+      margin-bottom: -90px;
       /* padding-top: 210px; */
       /* position:fixed; */
       left:240px;
@@ -178,6 +198,8 @@
       .MiddleLine
       {
       width:720px;
+      margin: -350px;
+      margin-bottom: 110px;
       /* position:fixed; */
       /* padding-top: 210px; */
       left:100px;
@@ -191,6 +213,7 @@
       font-weight:bold;
       height:200px;
       width:720px;
+      margin: -290px;
       /* padding-top: 210px; */
       /* position:fixed; */
       left:100px;
