@@ -13,15 +13,17 @@ export class HtmltopdfComponent{
     var data = document.getElementById('contentToConvert');
     html2canvas(data).then(canvas => {
       // Few necessary setting options
-      var imgWidth = 290;
+      console.log(canvas);
+      var imgWidth = 298;
       var pageHeight = 295;
       var imgHeight = canvas.height * imgWidth / canvas.width;
       var heightLeft = imgHeight;
+      console.log(imgHeight);
 
       const contentDataURL = canvas.toDataURL('image/png')
       let pdf = new jspdf('l', 'mm', 'a4'); // A4 size page of PDF
       var position = 0;
-      pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight)
+      pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, 215)
       pdf.save('MYPdf.pdf'); // Generated PDF
     });
   }
